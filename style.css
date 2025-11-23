@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap');
+
+:root {
+    --brand-green:#354a40;
+
+    --brand-gray: #f8f8f8;
+    --text-dark: #333;
+    --text-light: #555;
+    --text-gray-400: #9ca3af;
+    --border-color: #e5e7eb;
+    --red-600: #dc2626;
+    --red-700: #b91c1c;
+}
+a{
+    text-decoration: none;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text-dark);
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+.nav{
+    position: sticky;
+    top: 0;
+  overflow: hidden;
+}
+
+ 
+.hidden {
+    display: none;
+}
+
+/* --- 2. Header Sections --- */
+.site-header {
+    width: 100%;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+}
+
+/* Section 1: Announcement Banner */
+.announcement-banner {
+    background-color: var(--brand-green);
+    color: white;
+    padding: 0.625rem 0; /* 10px */
+    font-size: 0.875rem; /* 14px */
+    font-weight: 500;
+}
+
+.announcement-banner .banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.announcement-banner p {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.announcement-banner a {
+    text-decoration: underline;
+    transition: opacity 0.3s;
+}
+
+.announcement-banner a:hover {
+    opacity: 0.8;
+}
+
+.chevron-icon {
+    opacity: 0.7;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.chevron-icon:hover {
+    opacity: 1;
+}
+
+/* Section 2: Main Header (Desktop) */
+.main-header {
+    background-color: white;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.main-header > .container {
+    height: 5rem; /* 80px */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.header-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem; /* 10px */
+}
+
+.toggle-label-text {
+    font-size: 0.75rem; /* 12px */
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.toggle-label-text.disabled {
+    color: var(--text-gray-400);
+}
+
+.header-logo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-logo a {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem; /* 40px */
+    font-weight: 700;
+    color: var(--brand-green);
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* 16px */
+}
+
+.header-link {
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s;
+    text-decoration: none;
+    
+}
+
+.header-link:hover {
+    color: rgba(122, 245, 192, 0.955);
+}
+
+.icon-button,
+.icon-link {
+    color: var(--text-light);
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.icon-link {
+    transition: color 0.3s, transform 0.2s;
+}
+
+.icon-link:hover {
+    color: var(--brand-green);
+    transform: scale(1.1);
+}
+  
+
+ 
+
+
+
+.cta-button {
+    background-color: var(--brand-green);
+    color: white;
+    padding: 0.625rem 1.25rem; /* 10px 20px */
+    border-radius: 9999px;
+    font-size: 0.75rem; /* 12px */
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    transition: opacity 0.3s;
+}
+
+.cta-button:hover {
+    opacity: 0.9;
+}
+
+/* Section 3: Navigation Bar (Desktop) */
+.navigation-bar {
+    background-color: white;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navigation-bar > .container {
+    height: 3.5rem; /* 56px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem; /* 40px */
+}
+
+.navigation-bar a {
+    font-size: 0.875rem; /* 14px */
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: color 0.3s;
+}
+
+.navigation-bar a:hover {
+    color: var(--brand-green);
+}
+
+.link-highlight {
+    color: var(--red-600);
+    font-weight: 700 !important;
+}
+
+.link-highlight:hover {
+    color: var(--red-700) !important;
+}
+
+/* --- 3. Toggle Switch CSS --- */
+.toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background-color: #e5e7eb; /* gray-200 */
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.toggle-checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 20px;
+    background-color: #e5e7eb;
+    border-radius: 9999px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.toggle-knob {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.toggle-checkbox:checked + .toggle-label {
+    background-color: var(--brand-green);
+}
+
+.toggle-checkbox:checked + .toggle-label .toggle-knob {
+    transform: translateX(20px);
+}
+
+
+/* --- 4. Mobile Styles --- */
+.mobile-header {
+    background-color: white;
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mobile-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.875rem; /* 30px */
+    font-weight: 700;
+    color: var(--brand-green);
+}
+
+.mobile-menu {
+    display: flex; /* Will be toggled to 'hidden' */
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 150px); /* Adjust based on header heights */
+    z-index: 40;
+    padding: 1.5rem 1rem;
+    overflow-y: auto;
+    justify-content: space-between;
+}
+
+.mobile-menu-group {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* 24px */
+}
+
+.mobile-menu-group a {
+    font-size: 1.125rem; /* 18px */
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.mobile-menu-group-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* 24px */
+    border-top: 1px solid var(--border-color);
+    padding-top: 1.5rem;
+}
+
+.mobile-menu-group-bottom a {
+    font-size: 1rem; /* 16px */
+    font-weight: 500;
+}
+
+.cta-button.mobile-cta {
+    text-align: center;
+    padding: 0.75rem 1.25rem; /* 12px 20px */
+    font-size: 0.875rem; /* 14px */
+}
+
+
+/* --- 5. Responsive Hiding/Showing --- */
+.mobile-only {
+    display: none; /* Hide on desktop by default */
+}
+
+/* On screens 768px and smaller */
+@media (max-width: 768px) {
+    .desktop-only {
+        display: none;
+    }
+    
+    .mobile-only {
+        display: flex; /* 'flex' for header, 'block' or 'flex' for menu */
+    }
+    
+    .mobile-header {
+        display: flex;
+    }
+    
+    .mobile-menu.hidden {
+        display: none;
+    }
+
+    /* Hide desktop chevrons on mobile */
+    .announcement-banner .chevron-icon {
+        display: none;
+    }
+}
+
+/* --- 6. Page Content Placeholder --- */
+.page-content {
+    padding: 1rem;
+}
+
+.placeholder-content {
+    background-color: #f3f4f6; /* gray-100 */
+    height: 24rem; /* 384px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem; /* 8px */
+}
+
+.placeholder-content p {
+    color: #6b7280; /* gray-500 */
+}
+#w1{
+    display:flex;
+    align-items: center;
+    margin:auto;
+    padding: 0;;
+    height:600px;
+    background-color: #354a40;
+    font-size: 0;
+}
+.logo1{
+height: 450px;
+display: flex;
+padding:0;
+margin-left: auto;
+margin-right: 60px;
+justify-content: right;
+
+}
+#d1{
+    
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    padding: 0;
+    margin: 0;
+}
+h1{
+      font-size: 40px;
+      font-family: 'Times New Roman', Times, serif;
+    line-height: 90px;
+    margin-left: 10px;
+    overflow-wrap: break-word;
+    color: white;
+}
+#h1{
+    margin-left:60px ;
+}
+
+
+
+
+
+
