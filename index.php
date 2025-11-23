@@ -66,10 +66,14 @@
                 <div class="header-right">
                     
                     <!-- User Icon -->
-                    
-                    <a href="#" class="icon-link">
-                        <i class="fa-regular fa-user"></i>    
-                    </a>
+                    <div class="account-menu">
+                   <div class="user-icon"> <a href="#" class="icon-link">
+                        <i class="fa-regular fa-user"></i>   </a></div>
+                        <div class="account-dropdown">
+                <h3 class="dropdown-title">Account</h3>
+                <button class="btn btn-primary">SIGN IN</button>
+                <button class="btn btn-secondary">CREATE ACCOUNT</button>
+            </div></div>
                     <!-- Search Icon -->
                     <a href="#" class="icon-link">
                        <i class="fa-solid fa-magnifying-glass"></i>
@@ -165,18 +169,21 @@
         </div>
 </div>
         <div id="w1">
-        <div id="h1"><h1>LISTEN  EVERYWHERE,  EVERYTIME</h1></div><div class="logo1"><img  id="d1"src="image/logo.png"></div></div>
+        <div id="h1"><h1>LISTEN  EVERYTIME, EVERYWHERE</h1></div><div class="logo1"><img  id="d1"src="image/logo.png"></div></div>
      
 
     </header>
 
-    <!-- Placeholder for content below the header -->
     <main class="page-content">
         <div class="placeholder-content">
             
         </div>
     </main>
-
+<div>
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
 
     <script src="script.js"></script>
 
