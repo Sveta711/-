@@ -47,7 +47,7 @@
 
 .dropdown-title {
     font-size: 1.5em;
-    font-weight: 600;
+    font-weight: 400;
     color: #384f3e;
     margin-top: 0;
     margin-bottom: 20px;
@@ -60,7 +60,7 @@
     padding: 10px;
     margin-bottom: 10px;
     font-size: 1em;
-    font-weight: 600;
+    font-weight: 400;
     cursor: pointer;
     border-radius: 4px;
     text-align: center;
