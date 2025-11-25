@@ -89,9 +89,7 @@
 }
 
 
-a{
-    text-decoration: none;
-}
+
 * {
     margin: 0;
     padding: 0;
@@ -157,7 +155,7 @@ a {
 }
 
 .announcement-banner a {
-    text-decoration: underline;
+    text-decoration: none;
     transition: opacity 0.3s;
 }
 
@@ -229,7 +227,7 @@ a {
     font-size: 14px;
     font-weight: 500;
     transition: color 0.3s;
-    text-decoration: none;
+    
     
 }
 
