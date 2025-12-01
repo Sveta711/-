@@ -16,7 +16,7 @@
 
     <header class="site-header">
         
-        
+        <div class="headernav">
         <div class="announcement-banner">
             <div class="container banner-container">
                 
@@ -102,7 +102,7 @@
                 <a href="#" class="w1">Accessories</a>
                 <a href="#" class="link-highlight">Black Friday</a>
             </nav>
-        </div>
+        </div></div>
 </div>
 
 
@@ -168,13 +168,14 @@
             </div>
         </div>
 </div>
-        <div id="w1">
-        <div id="h1"><h1>LISTEN  EVERYTIME, EVERYWHERE</h1></div><div class="logo1"><img  id="d1"src="image/logo.png"></div></div>
+       
      
 
     </header>
 
     <main class="page-content">
+         <div id="w1">
+        <div id="h1"><h1>LISTEN  EVERYTIME, EVERYWHERE</h1></div><div class="logo1"><img  id="d1"src="image/logo.png"></div></div>
         <div class="placeholder-content" id="carousel">
                    <button class="nav-arrow prev-arrow"> &lt; </button>
             <div class="cards">

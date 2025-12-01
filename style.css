@@ -114,6 +114,8 @@ a {
     margin-right: auto;
     padding-left: 1rem;
     padding-right: 1rem;
+   
+
 
 }
 .nav{
@@ -122,14 +124,14 @@ a {
   overflow: visible;
   
 }
-/*.headernav{
+.headernav{
      position: fixed;
     left: 0;
     width: 100%;
-
+z-index: 30000;
  top: 0;
   overflow: visible;
-}*/
+}
  
 .hidden {
     display: none;
@@ -139,6 +141,7 @@ a {
 .site-header {
     width: 100%;
     box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+
 }
 
 /* Section 1: Announcement Banner */
@@ -664,11 +667,12 @@ a {
 #w1{
     display:flex;
     align-items: center;
-    margin:auto;
+    margin-top: 150px;
     padding: 0;;
     height:600px;
     background-color: #354a40;
     font-size: 0;
+    width:auto;
 }
 .logo1{
 height: 450px;
@@ -712,6 +716,7 @@ h1{
 .shop-button:hover{
     background-color: #639a7f;
 }
+
 
 
 

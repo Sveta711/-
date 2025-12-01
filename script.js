@@ -34,7 +34,7 @@
             }
         });
         prevArrow.disabled = currentIndex === 0;
-        nextArrow.disabled = currentIndex === cards.length ;
+        nextArrow.disabled = currentIndex === cards.length -1;
     }
     function nextCard() {
         if (currentIndex < cards.length ) {
