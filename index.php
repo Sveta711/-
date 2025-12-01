@@ -176,14 +176,29 @@
 
     <main class="page-content">
         <div class="placeholder-content">
-            
-        </div>
-    </main>
-<div>
+            <div class="cards">
+                  <button class="nav-arrow prev-arrow"> &lt; </button>
+                  <div class="c7">  <a href="" class="linkcard"><img src="image/audio.png"> <p class="cardtext">AUDIOBOOKS</p></a></div>
+           <div class="c1"> <a href="" class="linkcard"> <img src="image/romance1.png"> <p class="cardtext">ROMANCE</p></a></div>
+           <div class="c2"> <a href="" class="linkcard"> <img src="image/history2.png">  <p class="cardtext">HISTORY</p></a> </div> 
+           <div class="c3"> <a href="" class="linkcard"> <img src="image/fantasy2.png">  <p class="cardtext">FANTASY</p></a> </div>
+           <div class="c4"> <a href=""class="linkcard" > <img src="image/detective.png"> <p class="cardtext">DETECTIVE</p></a></div>
+           <div class="c5"> <a href="" class="linkcard"> <img src="image/comedy.png"><p class="cardtext">COMEDY</p></a> </div>
+           <div class="c6"> <a href="" class="linkcard"> <img src="image/children1.png"><p class="cardtext">FOR CHILDREN</p></a> </div>
+          
+          
+            <button class="nav-arrow next-arrow"> &gt; </button> 
+        </div>  <div class="button"> <button class="shop-button">SHOP</button></div>
+    </div>
+        
+
+      <div>
     <div></div>
     <div></div>
     <div></div>
 </div>
+    </main>
+
 
     <script src="script.js"></script>
 
