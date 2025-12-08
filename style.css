@@ -272,7 +272,7 @@ z-index: 30000;
 
 
 
-.cta-button {
+.cta-button1 {
     background-color: var(--brand-green);
     color: white;
     padding: 0.625rem 1.25rem; /* 10px 20px */
@@ -283,7 +283,7 @@ z-index: 30000;
     transition: opacity 0.3s;
 }
 
-.cta-button:hover {
+.cta-button1:hover {
     opacity: 0.9;
 }
 
@@ -690,7 +690,7 @@ justify-content: right;
     padding: 0;
     margin: 0;
 }
-h1{
+.z{
       font-size: 40px;
       font-family: 'Times New Roman', Times, serif;
     line-height: 90px;
@@ -716,8 +716,103 @@ h1{
 .shop-button:hover{
     background-color: #639a7f;
 }
+.b11{
+    background-color:#354a40;
+    width: auto;
+    margin-top: 15px;
+    color: #354a40;
+    border-radius: 5px;
+}
+.books{
+   /* display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    position: relative;*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 30px; 
+    max-width: 1200px;
+    margin: 40px auto; 
+    padding: 0 20px;
+}
+.book1{
+    /*margin: 20px;
+    border: 1px solid #10654e;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 210px;
+    align-items: center;*/
+    background-color: #FFFFFF;
+    /* Թեթև սահման, ոչ թե հստակ գիծ */
+    border: none; 
+    border-radius: 12px; /* Ավելի կլորացված եզրեր, որն ավելի նորաձև է */
+    overflow: hidden;
+    padding: 20px; /* Ավելի շատ ներքին դատարկ տարածք */
+    text-align: center;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    
+}
+.book1:hover{
+     /*transform: scale(1.03);*/
+     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); 
+    transform: translateY(-8px); 
+}
+.img{
+    width: 200px;
+    height: 200px;
+    margin-top: 5px;
+    padding:10px;
+    overflow: clip;
+    max-height: 280px; 
+    border-radius: 6px;
+    /* Թեթև ստվեր նաև պատկերի վրա, եթե այն ուղղանկյուն է */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
 
+.product-info {
+    padding: 15px 5px 0;
+}
 
+.product-title {
+    font-size: 1.3em; /* Մի փոքր մեծացնում ենք */
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.product-author {
+    color: #7f8c8d;
+    font-style: italic; /* Հեղինակը թեթևակի առանձնացնել */
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 1.5em;
+    color: #639a7f/*#1abc9c*/; 
+    margin-bottom: 25px;
+}
+
+/* 4. Սիրուն Կոճակ (CTA Button) */
+.cta-button {
+    background-color:#639a7f/*#1abc9c*/;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 25px; 
+    border-radius: 50px; /* Կլորացված (pill-shaped) կոճակ՝ ավելի նորաձև տեսքի համար */
+    font-weight: 600;
+    letter-spacing: 0.5px; /* Տառերի միջև տարածություն */
+    transition: background-color 0.3s, transform 0.2s;
+    width: 90%;
+    /* Թեթև ստվեր կոճակի տակ */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.cta-button:hover {
+    background-color:  #16a085; 
+    transform: translateY(-2px); /* Թեթևակի բարձրացնել hover-ի ժամանակ */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
+}
 
 
 
