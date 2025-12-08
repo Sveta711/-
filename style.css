@@ -813,7 +813,151 @@ justify-content: right;
     transform: translateY(-2px); /* Թեթևակի բարձրացնել hover-ի ժամանակ */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
 }
+/* ---------------------------------- */
+/* AUDIORIA Footer - White & #354a40 Style */
+/* ---------------------------------- */
 
+footer {
+    /* Main Dark Background */
+    background-color: #354a40; 
+    color: #ffffff; /* White text on dark background */
+    padding: 50px 0 20px 0;
+    font-family: Arial, sans-serif; 
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 22%; 
+    min-width: 200px;
+    margin-bottom: 30px;
+}
+
+/* Logo Style */
+.footer-logo {
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #ffffff; 
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Section Headings */
+.footer-section h4 {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 20px;
+    /* Subtle underline using the accent color */
+    border-bottom: 2px solid #8aa296; 
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Links List */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: #c9d0d3; /* Slightly off-white for contrast */
+    text-decoration: none;
+    line-height: 2.2;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #8aa296; /* Elegant hover effect using the lighter accent */
+}
+
+/* Subscription Form */
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.subscribe-form input[type="email"] {
+    padding: 12px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: #2a3b33; /* Darker field background for better visibility */
+    color: #ffffff;
+}
+/* Placeholder text color in inputs */
+.subscribe-form input[type="email"]::placeholder {
+    color: #aeb5b8; 
+}
+
+.subscribe-btn {
+    padding: 12px;
+    background-color: #8aa296; /* Accent color for the button */
+    color: #354a40; /* Dark text on light button for readability */
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.subscribe-btn:hover {
+    background-color: #aeb5b8; 
+}
+
+/* Social Icons */
+.social-icons a {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-right: 18px;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #8aa296;
+}
+
+/* Copyright Section */
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 30px;
+    /* Slightly darker shade for the bottom bar */
+    border-top: 1px solid #2a3b33; 
+    background-color: #2a3b33;
+    padding-bottom: 10px;
+}
+
+.footer-bottom p {
+    font-size: 0.9em;
+    color: #c9d0d3;
+}
+
+/* Responsive Design (Adaptation for smaller screens) */
+@media (max-width: 992px) {
+    .footer-section {
+        width: 45%; 
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-section {
+        width: 100%;
+        text-align: center;
+    }
+    .footer-section h4 {
+        /* Centered title for small screens */
+        display: block; 
+    }
+}
 
 
 
