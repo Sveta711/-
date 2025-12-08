@@ -744,18 +744,16 @@ justify-content: right;
     width: 210px;
     align-items: center;*/
     background-color: #FFFFFF;
-    /* Թեթև սահման, ոչ թե հստակ գիծ */
     border: none; 
-    border-radius: 12px; /* Ավելի կլորացված եզրեր, որն ավելի նորաձև է */
+    border-radius: 12px; 
     overflow: hidden;
-    padding: 20px; /* Ավելի շատ ներքին դատարկ տարածք */
+    padding: 20px; 
     text-align: center;
      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); 
     transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
     
 }
 .book1:hover{
-     /*transform: scale(1.03);*/
      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15); 
     transform: translateY(-8px); 
 }
@@ -767,7 +765,6 @@ justify-content: right;
     overflow: clip;
     max-height: 280px; 
     border-radius: 6px;
-    /* Թեթև ստվեր նաև պատկերի վրա, եթե այն ուղղանկյուն է */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
 }
 
@@ -776,51 +773,46 @@ justify-content: right;
 }
 
 .product-title {
-    font-size: 1.3em; /* Մի փոքր մեծացնում ենք */
+    font-size: 1.3em; 
     font-weight: 500;
     margin-top: 10px;
 }
 
 .product-author {
     color: #7f8c8d;
-    font-style: italic; /* Հեղինակը թեթևակի առանձնացնել */
+    font-style: italic;
     margin-bottom: 10px;
 }
 
 .product-price {
     font-size: 1.5em;
-    color: #639a7f/*#1abc9c*/; 
+    color: #639a7f; 
     margin-bottom: 25px;
 }
 
-/* 4. Սիրուն Կոճակ (CTA Button) */
+
 .cta-button {
-    background-color:#639a7f/*#1abc9c*/;
+    background-color:#639a7f;
     color: #FFFFFF;
     border: none;
     padding: 12px 25px; 
-    border-radius: 50px; /* Կլորացված (pill-shaped) կոճակ՝ ավելի նորաձև տեսքի համար */
+    border-radius: 50px; 
     font-weight: 600;
-    letter-spacing: 0.5px; /* Տառերի միջև տարածություն */
+    letter-spacing: 0.5px; 
     transition: background-color 0.3s, transform 0.2s;
     width: 90%;
-    /* Թեթև ստվեր կոճակի տակ */
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); 
 }
 
 .cta-button:hover {
     background-color:  #16a085; 
-    transform: translateY(-2px); /* Թեթևակի բարձրացնել hover-ի ժամանակ */
+    transform: translateY(-2px); 
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 
 }
-/* ---------------------------------- */
-/* AUDIORIA Footer - White & #354a40 Style */
-/* ---------------------------------- */
 
 footer {
-    /* Main Dark Background */
     background-color: #354a40; 
-    color: #ffffff; /* White text on dark background */
+    color: #ffffff; 
     padding: 50px 0 20px 0;
     font-family: Arial, sans-serif; 
 }
@@ -840,7 +832,7 @@ footer {
     margin-bottom: 30px;
 }
 
-/* Logo Style */
+
 .footer-logo {
     font-size: 1.6em;
     font-weight: bold;
@@ -849,26 +841,25 @@ footer {
     text-transform: uppercase;
 }
 
-/* Section Headings */
+
 .footer-section h4 {
     font-size: 1.2em;
     font-weight: 600;
     color: #ffffff;
     margin-bottom: 20px;
-    /* Subtle underline using the accent color */
     border-bottom: 2px solid #8aa296; 
     display: inline-block;
     padding-bottom: 5px;
 }
 
-/* Links List */
+
 .footer-section ul {
     list-style: none;
     padding: 0;
 }
 
 .footer-section ul li a {
-    color: #c9d0d3; /* Slightly off-white for contrast */
+    color: #c9d0d3; 
     text-decoration: none;
     line-height: 2.2;
     font-size: 1em;
@@ -876,10 +867,8 @@ footer {
 }
 
 .footer-section ul li a:hover {
-    color: #8aa296; /* Elegant hover effect using the lighter accent */
-}
+    color: #8aa296; }
 
-/* Subscription Form */
 .subscribe-form {
     display: flex;
     flex-direction: column;
@@ -890,18 +879,17 @@ footer {
     padding: 12px;
     margin-bottom: 10px;
     border: none;
-    background-color: #2a3b33; /* Darker field background for better visibility */
+    background-color: #2a3b33; 
     color: #ffffff;
 }
-/* Placeholder text color in inputs */
 .subscribe-form input[type="email"]::placeholder {
     color: #aeb5b8; 
 }
 
 .subscribe-btn {
     padding: 12px;
-    background-color: #8aa296; /* Accent color for the button */
-    color: #354a40; /* Dark text on light button for readability */
+    background-color: #8aa296; 
+    color: #354a40; 
     border: none;
     cursor: pointer;
     font-weight: bold;
@@ -913,7 +901,7 @@ footer {
     background-color: #aeb5b8; 
 }
 
-/* Social Icons */
+
 .social-icons a {
     color: #ffffff;
     font-size: 1.5em;
@@ -925,12 +913,11 @@ footer {
     color: #8aa296;
 }
 
-/* Copyright Section */
+
 .footer-bottom {
     text-align: center;
     padding-top: 20px;
     margin-top: 30px;
-    /* Slightly darker shade for the bottom bar */
     border-top: 1px solid #2a3b33; 
     background-color: #2a3b33;
     padding-bottom: 10px;
@@ -941,7 +928,7 @@ footer {
     color: #c9d0d3;
 }
 
-/* Responsive Design (Adaptation for smaller screens) */
+
 @media (max-width: 992px) {
     .footer-section {
         width: 45%; 
@@ -954,7 +941,6 @@ footer {
         text-align: center;
     }
     .footer-section h4 {
-        /* Centered title for small screens */
         display: block; 
     }
 }
