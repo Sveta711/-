@@ -100,11 +100,27 @@
                 <div class="product-price"style="color:green;">FREE</div>
                 <button class="cta-button">ADD TO CART</button>
         </a></div>
+        <div class="book1">
+     <a href="">
+            <img src="image/azkaban.png"class="img">
+             <h3 class="product-title">HARRY POTTER AND PRISONER OF AZKABAN</h3>
+                <p class="product-author">JK ROWLING</p>
+                <div class="product-price"style="color:green;">FREE AUDIOBOOK</div>
+                <button class="cta-button">ADD TO CART</button>
+        </a></div>
+       <div class="book1">
+     <a href="">
+            <img src="image/blood-prince.png"class="img">
+             <h3 class="product-title">HARRY POTTER AND HALF-BLOOD PRINCE</h3>
+                <p class="product-author">JK ROWLING</p>
+                <div class="product-price"style="color:green;">FREE AUDIOBOOK</div>
+                <button class="cta-button">ADD TO CART</button>
+        </a></div>
        
         
 </div>
     </main>
-    <?php include'include/footer.php' ?>
+    <?php include 'include/footer.php' ?>
 
 
     <script src="script.js"></script>

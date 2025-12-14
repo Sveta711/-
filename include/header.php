@@ -10,9 +10,9 @@
                 <div style="width:auto;">
                 <marquee behavior="scroll" direction="left" scrollamount="6">    Enjoy Audiobooks Everywhere, Everytime</marquee></div>
                 
-               <div style="display: flex; gap: 10px; align-items: center; padding-bottom: 0;"> <i class="fa-solid fa-retweet"></i><a href="" class="header-link">Refer & Earn</a> </div>
-             <div style="display: flex; gap: 10px; align-items: center; padding-bottom: 0;"> <i class="fa-regular fa-address-card"></i><a href="#" class="header-link">About</a></div>
-                <div  style="display: flex; gap: 10px; align-items: center; padding-bottom: 0;"> <i class="fa-regular fa-circle-question"></i> <a href="#" class="header-link">Support</a></div>
+               <div style="display: flex; gap: 10px; align-items: center; padding-bottom: 0;"> <i class="fa-solid fa-retweet"></i><a href="earn.php" class="header-link">Refer & Earn</a> </div>
+             <div style="display: flex; gap: 10px; align-items: center; padding-bottom: 0;"> <i class="fa-regular fa-address-card"></i><a href="about.php" class="header-link">About</a></div>
+                <div  style="display: flex; gap: 10px; align-items: center; padding-bottom: 0;"> <i class="fa-regular fa-circle-question"></i> <a href="support.php" class="header-link">Support</a></div>
                     
                     
                    
@@ -55,8 +55,8 @@
                         <i class="fa-regular fa-user"></i>   </a></div>
                         <div class="account-dropdown">
                 <h3 class="dropdown-title">Account</h3>
-                <button class="btn btn-primary">SIGN IN</button>
-                <button class="btn btn-secondary">CREATE ACCOUNT</button>
+              <a href="signin.php">  <button class="btn btn-primary">SIGN IN</button></a>
+              <a href="account.php">  <button class="btn btn-secondary">CREATE ACCOUNT</button></a>
             </div></div>
                     <!-- Search Icon -->
                     <a href="#" class="icon-link">
