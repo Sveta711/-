@@ -380,6 +380,7 @@ z-index: 30000;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 .mobile-logo {
@@ -396,7 +397,7 @@ z-index: 30000;
     position: absolute;
     width: 100%;
     height: calc(100vh - 150px); /* Adjust based on header heights */
-    z-index: 40;
+    z-index:40;
     padding: 1.5rem 1rem;
     overflow-y: auto;
     justify-content: space-between;

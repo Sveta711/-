@@ -43,7 +43,7 @@
             <img src="image/pride.jpg" class="img">
             <h3 class="product-title">PRIDE AND PREJUDICE</h3>
                 <p class="product-author">JANE AUSTIN</p>
-                <div class="product-price">10.00$</div>
+                <div class="product-price">FREE</div>
                 <button class="cta-button">ADD TO CART</button>
           <!--  <p class="booktext">PRIDE AND PREJUDICE</p>-->
         </a>
@@ -80,7 +80,7 @@
             <img src="image/me.jpg"class="img">
              <h3 class="product-title">ME BEFORE YOU</h3>
                 <p class="product-author">JOJO MOYES</p>
-                <div class="product-price"style="color:green;">FREE</div>
+                <div class="product-price"style="color:green;">10.00$</div>
                 <button class="cta-button">ADD TO CART</button>
         </a></div>
     <div class="book1">

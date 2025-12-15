@@ -133,16 +133,21 @@ body {
             <p>Please enter your details to sign in.</p>
         </div>
         
-        <form>
+        <form method="post" action="login_action.php">
             <div class="input-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" required>
+                <label for="email">Username</label>
+                <input type="text" name="username" required>
             </div>
             
             <div class="input-group">
                 <label for="password">Password</label>
-                <input type="password" id="password"  required>
+                <input type="password" name="password"  required>
             </div>
+            <?php 
+    session_start();
+    if(isset($_SESSION['login_error'])): ?>
+        <p style="color:red; font-size:12px;"><?php echo $_SESSION['login_error']; unset($_SESSION['login_error']); ?></p>
+    <?php endif; ?>
             
             <div class="actions">
                 <a href="#" class="forgot-password">Forgot password?</a>

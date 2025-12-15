@@ -19,7 +19,7 @@ $conn->select_db($dbname);
 $sql1 = "CREATE TABLE IF NOT EXISTS UserAccount(
     firstname VARCHAR(30) NOT NULL,
     lastname VARCHAR(30) NOT NULL,
-    username VARCHAR(30) NOT NULL,
+    username VARCHAR(40) NOT NULL,
     email VARCHAR(50),
     age INT(3),
     passwords VARCHAR(30) NOT NULL,
@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username_val = trim($_POST["username"] ?? "");
     $age = trim($_POST["age"] ?? "");
     $cardnumber = trim($_POST["cardnumber"] ?? "");
-
+   $hashed_password=md5($_POST["password"] );
     $required = ["firstname", "lastname", "email", "password", "username", "age"];
     foreach ($required as $field) {
         if (empty($_POST[$field])) {
@@ -77,7 +77,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if(empty($_SESSION['errors'])||!isset($_SESSION['errors'])){
 $sql2 = "INSERT INTO UserAccount (firstname, lastname,username, email,age,passwords,cardnumber)
- VALUES ('".$_POST['firstname']."','".$_POST['lastname']."','".$_POST['username']."','".$_POST['email']."','".$_POST['age']."','".$_POST['password']."','".$_POST['cardnumber']."')";
+ VALUES ('".$_POST['firstname']."','".$_POST['lastname']."','".$_POST['username']."','".$_POST['email']."','".$_POST['age']."','".$hashed_password."','".$_POST['cardnumber']."')";
 }
 if ($conn->query($sql2) === TRUE) {
   echo "New record created successfully";
