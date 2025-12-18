@@ -946,6 +946,9 @@ footer {
     }
 }
 
-
+#addbook:hover{
+     transform:scale(1.2);
+     
+}
 
 

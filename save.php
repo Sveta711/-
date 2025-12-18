@@ -6,13 +6,12 @@ $username = "root";
 $password = "";
 $dbname = "catalog_DB";
 
-// 1. Միացում սերվերին
-$conn = new mysqli($servername, $username, $password);
+
+$conn = new mysqli($servername, $username, $password,);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// 2. Բազայի և աղյուսակի ստեղծում (եթե չկան)
 $conn->query("CREATE DATABASE IF NOT EXISTS $dbname");
 $conn->select_db($dbname);
 
