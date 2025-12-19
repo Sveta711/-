@@ -792,7 +792,7 @@ justify-content: right;
 }
 
 
-.cta-button {
+.add-to-card {
     background-color:#639a7f;
     color: #FFFFFF;
     border: none;
@@ -805,7 +805,7 @@ justify-content: right;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); 
 }
 
-.cta-button:hover {
+.add-to-card:hover {
     background-color:  #16a085; 
     transform: translateY(-2px); 
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); 

@@ -23,13 +23,13 @@
                    <button class="nav-arrow prev-arrow"> &lt; </button>
             <div class="cards">
                 <div class="carddiv"id="c0"></div>
-           <div  class="carddiv"id="c7">  <a href="" class="linkcard"><img src="image/audio.png"> <p class="cardtext">AUDIOBOOKS</p></a></div>
-           <div class="carddiv" id="c1"> <a href="" class="linkcard"> <img src="image/romance1.png"> <p class="cardtext">ROMANCE</p></a></div>
-           <div class="carddiv"id="c2"> <a href="" class="linkcard"> <img src="image/history2.png">  <p class="cardtext">HISTORY</p></a> </div> 
-           <div class="carddiv"id="c3"> <a href="" class="linkcard"> <img src="image/fantasy2.png">  <p class="cardtext">FANTASY</p></a> </div>
-           <div class="carddiv"id="c4"> <a href=""class="linkcard" > <img src="image/detective.png"> <p class="cardtext">DETECTIVE</p></a></div>
-           <div class="carddiv"id="c5"> <a href="" class="linkcard"> <img src="image/comedy.png"><p class="cardtext">COMEDY</p></a> </div>
-           <div class="carddiv"id="c6"> <a href="" class="linkcard"> <img src="image/children1.png"><p class="cardtext">FOR CHILDREN</p></a> </div> 
+           <div  class="carddiv"id="c7">  <a href="category.php?genre=audiobook" class="linkcard"><img src="image/audio.png"> <p class="cardtext">AUDIOBOOKS</p></a></div>
+           <div class="carddiv" id="c1"> <a href="category.php?genre=romance" class="linkcard"> <img src="image/romance1.png"> <p class="cardtext">ROMANCE</p></a></div>
+           <div class="carddiv"id="c2"> <a href="category.php?genre=history" class="linkcard"> <img src="image/history2.png">  <p class="cardtext">HISTORY</p></a> </div> 
+           <div class="carddiv"id="c3"> <a href="category.php?genre=fantasy" class="linkcard"> <img src="image/fantasy2.png">  <p class="cardtext">FANTASY</p></a> </div>
+           <div class="carddiv"id="c4"> <a href="category.php?genre=detective"class="linkcard" > <img src="image/detective.png"> <p class="cardtext">DETECTIVE</p></a></div>
+           <div class="carddiv"id="c5"> <a href="category.php?genre=comedy" class="linkcard"> <img src="image/comedy.png"><p class="cardtext">COMEDY</p></a> </div>
+           <div class="carddiv"id="c6"> <a href="category.php?genre=children" class="linkcard"> <img src="image/children1.png"><p class="cardtext">FOR CHILDREN</p></a> </div> 
         </div> <button class="nav-arrow next-arrow"> &gt; </button>
          <div class="button"> <button class="shop-button">SHOP</button></div>
     </div>
@@ -44,7 +44,7 @@
             <h3 class="product-title">PRIDE AND PREJUDICE</h3>
                 <p class="product-author">JANE AUSTIN</p>
                 <div class="product-price">FREE</div>
-                <button class="cta-button">ADD TO CART</button>
+                <button class="add-to-card">ADD TO CART</button>
           <!--  <p class="booktext">PRIDE AND PREJUDICE</p>-->
         </a>
     </div>
@@ -54,7 +54,7 @@
              <h3 class="product-title">HARRY POTTER AND THE PHILISOPHER STONE</h3>
                 <p class="product-author">JK ROWLING</p>
                 <div class="product-price"style="color:green;">FREE AUDIOBOOK</div>
-                <button class="cta-button">ADD TO CART</button>
+                <button class="add-to-card">ADD TO CART</button>
         </a></div>
     <div class="book1">
         <a href="">
@@ -62,7 +62,7 @@
              <h3 class="product-title">CODE DA VINCHI</h3>
                 <p class="product-author"> DAN BROWN</p>
                 <div class="product-price">11.50$</div>
-                <button class="cta-button">ADD TO CART</button>
+                <button class="add-to-card">ADD TO CART</button>
           <!--  <p class="booktext">DAVINCHI'S CODE</p>-->
         </a>
     </div>
@@ -72,7 +72,7 @@
              <h3 class="product-title">FARYTALES</h3>
                 <p class="product-author">H.TUMANYAN</p>
                 <div class="product-price">8.00$</div>
-                <button class="cta-button">ADD TO CART</button>
+                <button class="add-to-card">ADD TO CART</button>
         </a>
     </div>
      <div class="book1">
@@ -81,7 +81,7 @@
              <h3 class="product-title">ME BEFORE YOU</h3>
                 <p class="product-author">JOJO MOYES</p>
                 <div class="product-price"style="color:green;">10.00$</div>
-                <button class="cta-button">ADD TO CART</button>
+                <button class="add-to-card">ADD TO CART</button>
         </a></div>
     <div class="book1">
          <a href="">
@@ -89,7 +89,7 @@
              <h3 class="product-title">DEATH IN CLOUDS</h3>
                 <p class="product-author"> AGATA CHRISTI</p>
                 <div class="product-price">10.50$</div>
-                <button class="cta-button">ADD TO CART</button>
+                <button class="add-to-card">ADD TO CART</button>
         </a>
     </div>
     <div class="book1">
@@ -98,7 +98,7 @@
              <h3 class="product-title">HAND WITH TOXIC PEN</h3>
                 <p class="product-author">AGATA CHRISTI</p>
                 <div class="product-price"style="color:green;">FREE</div>
-                <button class="cta-button">ADD TO CART</button>
+                <button class="add-to-card">ADD TO CART</button>
         </a></div>
         <div class="book1">
      <a href="">
@@ -106,7 +106,7 @@
              <h3 class="product-title">HARRY POTTER AND PRISONER OF AZKABAN</h3>
                 <p class="product-author">JK ROWLING</p>
                 <div class="product-price"style="color:green;">FREE AUDIOBOOK</div>
-                <button class="cta-button">ADD TO CART</button>
+                <button class="add-to-card">ADD TO CART</button>
         </a></div>
        <div class="book1">
      <a href="">
@@ -114,7 +114,7 @@
              <h3 class="product-title">HARRY POTTER AND HALF-BLOOD PRINCE</h3>
                 <p class="product-author">JK ROWLING</p>
                 <div class="product-price"style="color:green;">FREE AUDIOBOOK</div>
-                <button class="cta-button">ADD TO CART</button>
+                <button class="add-to-card">ADD TO CART</button>
         </a></div>
        
         
