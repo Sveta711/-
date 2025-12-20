@@ -44,9 +44,10 @@
             <h3 class="product-title">PRIDE AND PREJUDICE</h3>
                 <p class="product-author">JANE AUSTIN</p>
                 <div class="product-price">FREE</div>
-                <button class="add-to-card">ADD TO CART</button>
           <!--  <p class="booktext">PRIDE AND PREJUDICE</p>-->
         </a>
+                        <button class="add-to-card"  onclick="window.location.href='account.php'">ADD TO CART</button>
+
     </div>
     <div class="book1">
      <a href="">
@@ -54,17 +55,18 @@
              <h3 class="product-title">HARRY POTTER AND THE PHILISOPHER STONE</h3>
                 <p class="product-author">JK ROWLING</p>
                 <div class="product-price"style="color:green;">FREE AUDIOBOOK</div>
-                <button class="add-to-card">ADD TO CART</button>
-        </a></div>
+        </a>
+                        <button class="add-to-card" onclick="window.location.href='account.php'">ADD TO CART</button>
+    </div>
     <div class="book1">
         <a href="">
             <img src="image/davinchi.jpg"class="img">
              <h3 class="product-title">CODE DA VINCHI</h3>
                 <p class="product-author"> DAN BROWN</p>
                 <div class="product-price">11.50$</div>
-                <button class="add-to-card">ADD TO CART</button>
           <!--  <p class="booktext">DAVINCHI'S CODE</p>-->
         </a>
+                        <button class="add-to-card"onclick="window.location.href='account.php'">ADD TO CART</button>
     </div>
     <div class="book1">
          <a href="">
@@ -72,8 +74,9 @@
              <h3 class="product-title">FARYTALES</h3>
                 <p class="product-author">H.TUMANYAN</p>
                 <div class="product-price">8.00$</div>
-                <button class="add-to-card">ADD TO CART</button>
         </a>
+                        <button class="add-to-card" onclick="window.location.href='account.php'">ADD TO CART</button>
+
     </div>
      <div class="book1">
      <a href="">
@@ -81,16 +84,18 @@
              <h3 class="product-title">ME BEFORE YOU</h3>
                 <p class="product-author">JOJO MOYES</p>
                 <div class="product-price"style="color:green;">10.00$</div>
-                <button class="add-to-card">ADD TO CART</button>
-        </a></div>
+        </a>
+                    <button class="add-to-card" onclick="window.location.href='account.php'">ADD TO CART</button>
+    </div>
     <div class="book1">
          <a href="">
             <img src="image/agata.jpg"class="img">
              <h3 class="product-title">DEATH IN CLOUDS</h3>
                 <p class="product-author"> AGATA CHRISTI</p>
                 <div class="product-price">10.50$</div>
-                <button class="add-to-card">ADD TO CART</button>
         </a>
+                        <button class="add-to-card" onclick="window.location.href='account.php'">ADD TO CART</button>
+
     </div>
     <div class="book1">
      <a href="">
@@ -98,24 +103,30 @@
              <h3 class="product-title">HAND WITH TOXIC PEN</h3>
                 <p class="product-author">AGATA CHRISTI</p>
                 <div class="product-price"style="color:green;">FREE</div>
-                <button class="add-to-card">ADD TO CART</button>
-        </a></div>
+        </a>
+                        <button class="add-to-card"onclick="window.location.href='account.php'">ADD TO CART</button>
+
+    </div>
         <div class="book1">
      <a href="">
             <img src="image/azkaban.png"class="img">
              <h3 class="product-title">HARRY POTTER AND PRISONER OF AZKABAN</h3>
                 <p class="product-author">JK ROWLING</p>
                 <div class="product-price"style="color:green;">FREE AUDIOBOOK</div>
-                <button class="add-to-card">ADD TO CART</button>
-        </a></div>
+        </a>      
+                  <button class="add-to-card" onclick="window.location.href='account.php'">ADD TO CART</button>
+
+    </div>
        <div class="book1">
      <a href="">
             <img src="image/blood-prince.png"class="img">
              <h3 class="product-title">HARRY POTTER AND HALF-BLOOD PRINCE</h3>
                 <p class="product-author">JK ROWLING</p>
                 <div class="product-price"style="color:green;">FREE AUDIOBOOK</div>
-                <button class="add-to-card">ADD TO CART</button>
-        </a></div>
+        </a>
+                        <button class="add-to-card" onclick="window.location.href='account.php'">ADD TO CART</button>
+
+    </div>
        
         
 </div>

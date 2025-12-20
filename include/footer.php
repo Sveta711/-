@@ -25,8 +25,8 @@
             <h4>Company</h4>
             <ul>
                 <li><a href="about.php">About Us</a></li>
-                <li><a href="contact.php">Contact Us</a></li>
-                <li><a href="faq.php">FAQ</a></li>
+                <li><a href="support.php">Contact Us</a></li>
+                <li><a href="support.php">FAQ</a></li>
                 <li><a href="terms.php">Terms of Use</a></li>
             </ul>
         </div>
