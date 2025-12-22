@@ -21,37 +21,101 @@ if (!$book) {
     <title><?php echo $book['title']; ?> - Details</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body{
-            padding-top:100px;
+       main{
+           padding: auto;
+
         }
         .product-container {
             display: flex;
-            gap: 50px;
-            max-width: 1000px;
-            margin: 150px auto;
-            padding: 20px;
-            background: #fff;
+            width: 1200px;
+            margin: 40px auto;
+            padding: 150px;
+            gap: 40px;
+            flex-wrap: wrap;
         }
-        .product-left { flex: 1; }
-        .product-left img { width: 100%; border-radius: 8px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-        .product-right { flex: 1.5; }
-        .product-title { font-size: 32px; margin-bottom: 10px; }
-        .product-author { font-size: 20px; color: #555; margin-bottom: 20px; }
-        .product-desc { line-height: 1.6; color: #666; margin-bottom: 30px; }
-        .product-price { font-size: 24px; font-weight: bold; color: #e67e22; margin-bottom: 20px; }
+        .product-left {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+        .product-left img {
+            max-width: 100%;
+            max-height: 500px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+        
+        .product-title {
+            font-size: 2.2rem;
+            margin-bottom: 10px;
+            color: #354a40;
+            font-family: 'Playfair Display', serif;
+        }
+        .product-author {
+            font-size: 1.3rem;
+            color: #666;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+        .product-price {
+            font-size: 1.8rem;
+            color: #d4a574;
+            font-weight: bold;
+            margin-bottom: 25px;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .product-desc {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            margin-bottom: 30px;
+            color: #444;
+        }
+        .product-right {
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+        }
+        .book-meta {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+        }
+        .meta-item {
+            margin-bottom: 10px;
+            font-size: 1rem;
+            color: #555;
+        }
         .buy-btn {
-            padding: 15px 30px;
-            background: #27ae60;
+            padding: 10px 40px;
+           background: #354a40;
             color: white;
             border: none;
             cursor: pointer;
             font-size: 18px;
             border-radius: 5px;
         }
+         .back-button {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #354a40;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        .back-button:hover {
+            background: #2a3b33;
+        }
     </style>
 </head>
 <body>
-    <?php include 'include/header.php'; // Եթե ունես առանձնացրած header ?>
+    <?php include 'include/header.php';  ?>
 
     <div class="product-container">
         <div class="product-left">
@@ -70,6 +134,16 @@ if (!$book) {
                 ADD TO CART
             </button>
         </div>
+         <div class="book-meta">
+                    <div class="meta-item"><strong>Format:</strong> Audiobook</div>
+                    <div class="meta-item"><strong>Duration:</strong> 8 hours 30 minutes</div>
+                    <div class="meta-item"><strong>Language:</strong> English</div>
+                    <div class="meta-item"><strong>Narrator:</strong> Professional Voice Actor</div>
+                </div>
+                
+                <a href="welcome.php" class="back-button">
+                    <i class="fas fa-arrow-left"></i> BACK TO CATALOG
+                </a>
     </div>
     <?php include "include/footer.php"?>
 </body>

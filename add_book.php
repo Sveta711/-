@@ -15,7 +15,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $result = $bookController->handleAddBook($_POST);
 }
 
-// Ստանալ բոլոր գրքերը ցուցադրման համար
 $allBooks = $bookController->getAllBooks();
 ?>
 

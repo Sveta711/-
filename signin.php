@@ -2,12 +2,12 @@
 <html>
 <head>
     <style>
-        /* Գույների փոփոխականներ՝ ըստ Branch-ի ոճի */
+      
 :root {
     --branch-dark: #1a1a1a;
     --branch-grey: #f4f4f4;
     --branch-text-muted: #666;
-    --branch-accent: #3d4a3e; /* Sage green երանգ */
+    --branch-accent: #3d4a3e; 
     --white: #ffffff;
 }
 
@@ -30,7 +30,7 @@ body {
 .login-box {
     background: var(--white);
     padding: 40px;
-    border: 2px solid #354a40;; /* Branch-ը սիրում է ուղիղ, բայց նուրբ եզրեր */
+    border: 2px solid #354a40;; 
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     border-radius:15px;
 }

@@ -1,9 +1,8 @@
 <?php
-// Սա դիր welcome.php ֆայլի ամենասկզբում
 require_once 'config.php';
 require_once 'BookRepository.php';
 
-// Ստուգում ենք, արդյոք Database կլասը հասանելի է (ենթադրում եմ config.php-ում կա)
+// Ստուգում ենք, արդյոք Database կլասը կա
 $connection = Database::getInstance();
 $bookRepository = new BookRepository($connection);
 
@@ -168,7 +167,7 @@ $dynamicBooks = $bookRepository->getAll();
             justify-content: space-between;
             align-items: center;
         }
-        
+    
         .quantity-control {
             display: flex;
             align-items: center;
@@ -556,7 +555,7 @@ $dynamicBooks = $bookRepository->getAll();
         <?php endforeach; ?>
     <?php endif; ?>
     <div class="book1">
-     <a href="book-details.php">
+     <a href="defaultbook.php?type=static&id=pride">
             <img src="image/pride.jpg" class="img">
             <h3 class="product-title">PRIDE AND PREJUDICE</h3>
                 <p class="product-author">JANE AUSTIN</p>
@@ -567,7 +566,8 @@ $dynamicBooks = $bookRepository->getAll();
           <button class="add-to-card" data-title="Pride and Prejudice" data-author="Jane Austen" data-price="0" data-image="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=400&h=300&fit=crop">ADD TO CART</button>
     </div>
     <div class="book1">
-<a href="book-details.php">
+     <a href="defaultbook.php?type=static&id=harry1">
+
             <img src="image/harry.jpg"class="img">
              <h3 class="product-title">HARRY POTTER AND THE PHILISOPHER STONE</h3>
                 <p class="product-author">JK ROWLING</p>
@@ -576,7 +576,7 @@ $dynamicBooks = $bookRepository->getAll();
 
     </div>
     <div class="book1">
-     <a href="book-details.php">
+             <a href="defaultbook.php?type=static&id=davinchi">
             <img src="image/davinchi.jpg"class="img">
              <h3 class="product-title">CODE DA VINCHI</h3>
                 <p class="product-author"> DAN BROWN</p>
@@ -587,7 +587,7 @@ $dynamicBooks = $bookRepository->getAll();
 
     </div>
     <div class="book1">
-        <a href="book-details.php">
+          <a href="defaultbook.php?type=static&id=fary">
             <img src="image/tale.jpg"class="img">
              <h3 class="product-title">FARYTALES</h3>
                 <p class="product-author">H.TUMANYAN</p>
@@ -597,7 +597,7 @@ $dynamicBooks = $bookRepository->getAll();
 
     </div>
      <div class="book1">
-         <a href="book-details.php">
+             <a href="defaultbook.php?type=static&id=me">
             <img src="image/me.jpg"class="img">
              <h3 class="product-title">ME BEFORE YOU</h3>
                 <p class="product-author">JOJO MOYES</p>
@@ -607,7 +607,7 @@ $dynamicBooks = $bookRepository->getAll();
 
     </div>
     <div class="book1">
-       <a href="book-details.php">
+       <a href="defaultbook.php">
             <img src="image/agata.jpg"class="img">
              <h3 class="product-title">DEATH IN CLOUDS</h3>
                 <p class="product-author"> AGATA CHRISTI</p>
@@ -617,7 +617,7 @@ $dynamicBooks = $bookRepository->getAll();
 
     </div>
     <div class="book1">
-        <a href="book-details.php">
+        <a href="defaultbook.php">
             <img src="image/agata1.jpg"class="img">
              <h3 class="product-title">HAND WITH TOXIC PEN</h3>
                 <p class="product-author">AGATA CHRISTI</p>
@@ -625,7 +625,7 @@ $dynamicBooks = $bookRepository->getAll();
         </a> <button class="add-to-card" data-title="HAND WITH TOXIC PEN" data-author="AGATHA CHRISTI" data-price="0" data-image="image/agata1.jpg">ADD TO CART</button>
     </div>
         <div class="book1">
-       <a href="book-details.php">
+       <a href="defaultbook.php">
             <img src="image/azkaban.png"class="img">
              <h3 class="product-title">HARRY POTTER AND PRISONER OF AZKABAN</h3>
                 <p class="product-author">JK ROWLING</p>
@@ -635,7 +635,7 @@ $dynamicBooks = $bookRepository->getAll();
 
     </div>
        <div class="book1">
-         <a href="book-details.php">
+         <a href="defaultbook.php">
             <img src="image/blood-prince.png"class="img">
              <h3 class="product-title">HARRY POTTER AND HALF-BLOOD PRINCE</h3>
                 <p class="product-author">JK ROWLING</p>
@@ -656,7 +656,7 @@ $dynamicBooks = $bookRepository->getAll();
     <?php include 'include/footer.php' ?>
 
 <script>
-    // Simple Cart System
+   alert("YOU'RE SUCCESSFULLY SIGNED🎉");
     class CartSystem {
         constructor() {
             this.cart = JSON.parse(localStorage.getItem('audiobookCart')) || {};
@@ -666,7 +666,6 @@ $dynamicBooks = $bookRepository->getAll();
         init() {
             console.log('Cart System Initialized');
             
-            // Cart icon click (Desktop)
             const cartIcon = document.getElementById('cartIcon');
             if (cartIcon) {
                 cartIcon.addEventListener('click', (e) => {
@@ -676,7 +675,6 @@ $dynamicBooks = $bookRepository->getAll();
                 });
             }
             
-            // Cart icon click (Mobile)
             const cartIconMobile = document.getElementById('cartIconMobile');
             if (cartIconMobile) {
                 cartIconMobile.addEventListener('click', (e) => {
@@ -686,7 +684,6 @@ $dynamicBooks = $bookRepository->getAll();
                 });
             }
             
-            // Close cart
             const closeBtn = document.querySelector('.close-cart');
             if (closeBtn) {
                 closeBtn.addEventListener('click', () => this.closeCart());
@@ -697,7 +694,6 @@ $dynamicBooks = $bookRepository->getAll();
                 overlay.addEventListener('click', () => this.closeCart());
             }
             
-            // Add to cart buttons
             document.querySelectorAll('.add-to-card').forEach(btn => {
                 btn.addEventListener('click', (e) => {
                     e.preventDefault();
@@ -714,7 +710,6 @@ $dynamicBooks = $bookRepository->getAll();
                     console.log('Adding item:', item);
                     this.addItem(item);
                     
-                    // Visual feedback
                     const originalText = e.target.textContent;
                     const originalColor = e.target.style.backgroundColor;
                     e.target.textContent = '✓ ADDED!';
@@ -729,7 +724,7 @@ $dynamicBooks = $bookRepository->getAll();
                 });
             });
             
-            // Clear cart button
+           
             const clearBtn = document.getElementById('clearCart');
             if (clearBtn) {
                 clearBtn.addEventListener('click', () => {
@@ -743,10 +738,10 @@ $dynamicBooks = $bookRepository->getAll();
                 });
             }
             
-            // Update initial badge
+           
             this.updateCartBadge();
             
-            // Close on ESC key
+    
             document.addEventListener('keydown', (e) => {
                 if (e.key === 'Escape' && document.getElementById('cartModal').classList.contains('active')) {
                     this.closeCart();
@@ -770,7 +765,6 @@ $dynamicBooks = $bookRepository->getAll();
             this.updateCartBadge();
             this.showNotification(`Added "${item.title}" to cart`);
             
-            // If cart is open, update it
             if (document.getElementById('cartModal').classList.contains('active')) {
                 this.renderCartItems();
             }
@@ -880,12 +874,10 @@ $dynamicBooks = $bookRepository->getAll();
             
             container.innerHTML = html;
             
-            // Add event listeners to new elements
             this.addCartItemListeners();
         }
         
         addCartItemListeners() {
-            // Quantity minus buttons
             document.querySelectorAll('.quantity-btn.minus').forEach(btn => {
                 btn.addEventListener('click', (e) => {
                     const id = e.target.dataset.id;
@@ -893,7 +885,6 @@ $dynamicBooks = $bookRepository->getAll();
                 });
             });
             
-            // Quantity plus buttons
             document.querySelectorAll('.quantity-btn.plus').forEach(btn => {
                 btn.addEventListener('click', (e) => {
                     const id = e.target.dataset.id;
@@ -901,7 +892,6 @@ $dynamicBooks = $bookRepository->getAll();
                 });
             });
             
-            // Quantity inputs
             document.querySelectorAll('.quantity-input').forEach(input => {
                 input.addEventListener('change', (e) => {
                     const id = e.target.dataset.id;
@@ -916,7 +906,6 @@ $dynamicBooks = $bookRepository->getAll();
                 });
             });
             
-            // Remove buttons
             document.querySelectorAll('.remove-btn').forEach(btn => {
                 btn.addEventListener('click', (e) => {
                     const id = e.target.dataset.id;
@@ -929,7 +918,6 @@ $dynamicBooks = $bookRepository->getAll();
                 });
             });
             
-            // Checkout button
             const checkoutBtn = document.querySelector('.btn-checkout');
             if (checkoutBtn) {
                 checkoutBtn.addEventListener('click', () => {
@@ -968,11 +956,9 @@ $dynamicBooks = $bookRepository->getAll();
         }
         
         showNotification(message) {
-            // Remove existing notification
             const existing = document.querySelector('.notification');
             if (existing) existing.remove();
             
-            // Create new notification
             const notification = document.createElement('div');
             notification.className = 'notification';
             notification.innerHTML = `
@@ -982,7 +968,6 @@ $dynamicBooks = $bookRepository->getAll();
             
             document.body.appendChild(notification);
             
-            // Remove after 3 seconds
             setTimeout(() => {
                 if (notification.parentNode) {
                     notification.style.animation = 'slideOut 0.3s ease';
@@ -996,7 +981,6 @@ $dynamicBooks = $bookRepository->getAll();
         }
     }
     
-    // Initialize cart when page loads
     document.addEventListener('DOMContentLoaded', () => {
         window.cartSystem = new CartSystem();
     });

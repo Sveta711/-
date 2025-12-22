@@ -18,7 +18,7 @@ class Book {
         $this->createdAt = date('Y-m-d H:i:s');
     }
 
-    // Getter and Setter մեթոդներ
+    
     public function getId() { return $this->id; }
     public function getTitle() { return $this->title; }
     public function getAuthor() { return $this->author; }
