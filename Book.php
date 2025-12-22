@@ -1,6 +1,5 @@
 <?php
 class Book {
-    private $id;
     private $title;
     private $author;
     private $genre;
@@ -30,7 +29,7 @@ class Book {
     public function getPages() { return $this->pages; }
     public function getCover() { return $this->cover; }
     public function getCreatedAt() { return $this->createdAt; }
-
+   
     public function setYear($year) { $this->year = $year; }
     public function setPrice($price) { $this->price = $price; }
     public function setPages($pages) { $this->pages = $pages; }

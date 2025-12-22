@@ -6,62 +6,78 @@ $all_books = [
         'author' => 'JANE AUSTEN',
         'price' => 'FREE',
         'image' => 'image/pride.jpg',
-        'genre' => 'romance'
+        'genre' => 'romance',
+        'id'=> '1'
     ],
     [
         'title' => 'CODE DA VINCI',
         'author' => 'DAN BROWN',
         'price' => '11.50$',
         'image' => 'image/davinchi.jpg',
-        'genre' => 'history'
+        'genre' => 'history',
+      'id'=> '2'
     ],
      [
         'title' => 'FARYTALES',
         'author' => 'H TUMANYAN',
         'price' => '8.00$',
         'image' => 'image/tale.jpg',
-        'genre' => 'children'
+        'genre' => 'children',
+          'id'=> '3'
+
     ],
      [
         'title' => 'ME BEFORE YOU',
         'author' => 'JOJO MOYES',
         'price' => '10.00$',
         'image' => 'image/me.jpg',
-        'genre' => 'romance'
+        'genre' => 'romance',
+       'id'=> '4'
+
     ],
      [
         'title' => 'DEATH IN CLOUDS',
         'author' => 'AGATA CHRISTI',
         'price' => '10.50$',
         'image' => 'image/agata.jpg',
-        'genre' => 'detective'
+        'genre' => 'detective',
+                'id'=> '5'
+
     ],
      [
         'title' => 'HAND WITH TOXIC PEN',
         'author' => 'AGATA CHRISTI',
         'price' => 'FREE',
         'image' => 'image/agata1.jpg',
-        'genre' => 'detective'
+        'genre' => 'detective',
+             'id'=> '6'
+
     ],
      [
         'title' => 'HARRY POTTER AND PRISONER OF AZKABAN',
         'author' => 'JK ROWLING',
         'price' => 'FREE',
         'image' => 'image/azkaban.png',
-        'genre' => 'fantasy'
+        'genre' => 'fantasy',
+                'id'=> '7'
+
     ], [
         'title' => 'HARRY POTTER AND HALF-BLOOD PRINCE',
         'author' => 'JK ROWLING',
         'price' => 'FREE',
         'image' => 'image/blood-prince.png',
-        'genre' => 'fantasy'
+        'genre' => 'fantasy',
+         'id'=> '8'
+
     ],
     [
         'title' => 'HARRY POTTER AND THE PHILISOPHER STONE',
         'author' => 'JK ROWLING',
         'price' => 'FREE',
         'image' => 'image/harry.jpg',
-        'genre' => 'fantasy'
+        'genre' => 'fantasy',
+           'id'=> '9'
+
     ]
 ];
 

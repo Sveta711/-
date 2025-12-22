@@ -44,7 +44,7 @@
             <h3 class="product-title">PRIDE AND PREJUDICE</h3>
                 <p class="product-author">JANE AUSTIN</p>
                 <div class="product-price">FREE</div>
-          <!--  <p class="booktext">PRIDE AND PREJUDICE</p>-->
+       
         </a>
                         <button class="add-to-card"  onclick="window.location.href='account.php'">ADD TO CART</button>
 

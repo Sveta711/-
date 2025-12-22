@@ -22,7 +22,8 @@ class BookRepository {
             $data['price'],
             $data['pages'],
             $data['cover'],
-            $data['created_at']
+            $data['created_at'],
+        
         );
         
         return $stmt->execute();
@@ -39,5 +40,12 @@ class BookRepository {
         
         return $books;
     }
+    public function getById($id) {
+    $sql = "SELECT * FROM books WHERE id = ?";
+    $stmt = $this->connection->prepare($sql);
+    $stmt->bind_param("i", $id);
+    $stmt->execute();
+    return $stmt->get_result()->fetch_assoc();
+}
 }
 ?>

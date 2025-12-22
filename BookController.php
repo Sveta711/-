@@ -7,7 +7,6 @@ class BookController {
     }
 
     public function handleAddBook($postData) {
-        // Ստեղծել նոր Book օբյեկտ
         $book = new Book(
             htmlspecialchars($postData['title']),
             htmlspecialchars($postData['author']),
@@ -15,7 +14,7 @@ class BookController {
             htmlspecialchars($postData['description'])
         );
 
-        // Սեթ անել օպցիոնալ դաշտերը
+        
         if (!empty($postData['year'])) {
             $book->setYear((int)$postData['year']);
         }
@@ -32,11 +31,11 @@ class BookController {
             $book->setCover(htmlspecialchars($postData['cover']));
         }
 
-        // Վալիդացիա
+      
         $errors = $book->validate();
         
         if (empty($errors)) {
-            // Պահպանել տվյալների բազայում
+          
             $success = $this->bookRepository->save($book);
             
             if ($success) {

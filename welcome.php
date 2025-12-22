@@ -1,4 +1,15 @@
+<?php
+// Սա դիր welcome.php ֆայլի ամենասկզբում
+require_once 'config.php';
+require_once 'BookRepository.php';
 
+// Ստուգում ենք, արդյոք Database կլասը հասանելի է (ենթադրում եմ config.php-ում կա)
+$connection = Database::getInstance();
+$bookRepository = new BookRepository($connection);
+
+// Ստանում ենք բոլոր գրքերը բազայից
+$dynamicBooks = $bookRepository->getAll();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -513,8 +524,39 @@
         
 
       <div class="books">
+        <?php if (!empty($dynamicBooks)): ?>
+        <?php foreach ($dynamicBooks as $book): ?>
+            <div class="book1">
+                <a href="book-details.php?id=<?php echo $book['id']; ?>">
+                    <img src="<?php echo htmlspecialchars($book['cover_url']); ?>" 
+                         class="img" 
+                         alt="<?php echo htmlspecialchars($book['title']); ?>"
+                         onerror="this.src='image/default-book.jpg'"> <h3 class="product-title"><?php echo htmlspecialchars($book['title']); ?></h3>
+                    
+                    <p class="product-author"><?php echo htmlspecialchars($book['author']); ?></p>
+                    
+                    <?php 
+                        $price = (float)$book['price'];
+                        if ($price == 0) {
+                            echo '<div class="product-price" style="color:green;">FREE AUDIOBOOK</div>';
+                        } else {
+                            echo '<div class="product-price">' . number_format($price, 2) . '$</div>';
+                        }
+                    ?>
+                </a>
+                
+                <button class="add-to-card" 
+                        data-title="<?php echo htmlspecialchars($book['title']); ?>" 
+                        data-author="<?php echo htmlspecialchars($book['author']); ?>" 
+                        data-price="<?php echo $price; ?>" 
+                        data-image="<?php echo htmlspecialchars($book['cover_url']); ?>">
+                    ADD TO CART
+                </button>
+            </div>
+        <?php endforeach; ?>
+    <?php endif; ?>
     <div class="book1">
-        <a href="">
+     <a href="book-details.php">
             <img src="image/pride.jpg" class="img">
             <h3 class="product-title">PRIDE AND PREJUDICE</h3>
                 <p class="product-author">JANE AUSTIN</p>
@@ -525,7 +567,7 @@
           <button class="add-to-card" data-title="Pride and Prejudice" data-author="Jane Austen" data-price="0" data-image="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=400&h=300&fit=crop">ADD TO CART</button>
     </div>
     <div class="book1">
-     <a href="">
+<a href="book-details.php">
             <img src="image/harry.jpg"class="img">
              <h3 class="product-title">HARRY POTTER AND THE PHILISOPHER STONE</h3>
                 <p class="product-author">JK ROWLING</p>
@@ -534,7 +576,7 @@
 
     </div>
     <div class="book1">
-        <a href="">
+     <a href="book-details.php">
             <img src="image/davinchi.jpg"class="img">
              <h3 class="product-title">CODE DA VINCHI</h3>
                 <p class="product-author"> DAN BROWN</p>
@@ -545,7 +587,7 @@
 
     </div>
     <div class="book1">
-         <a href="">
+        <a href="book-details.php">
             <img src="image/tale.jpg"class="img">
              <h3 class="product-title">FARYTALES</h3>
                 <p class="product-author">H.TUMANYAN</p>
@@ -555,7 +597,7 @@
 
     </div>
      <div class="book1">
-     <a href="">
+         <a href="book-details.php">
             <img src="image/me.jpg"class="img">
              <h3 class="product-title">ME BEFORE YOU</h3>
                 <p class="product-author">JOJO MOYES</p>
@@ -565,7 +607,7 @@
 
     </div>
     <div class="book1">
-         <a href="">
+       <a href="book-details.php">
             <img src="image/agata.jpg"class="img">
              <h3 class="product-title">DEATH IN CLOUDS</h3>
                 <p class="product-author"> AGATA CHRISTI</p>
@@ -575,15 +617,15 @@
 
     </div>
     <div class="book1">
-     <a href="">
+        <a href="book-details.php">
             <img src="image/agata1.jpg"class="img">
              <h3 class="product-title">HAND WITH TOXIC PEN</h3>
                 <p class="product-author">AGATA CHRISTI</p>
                 <div class="product-price"style="color:green;">FREE</div>  
-        </a> <button class="add-to-card" data-title="HAND WITH TOXIC PEN" data-author="AGATHA CHRISTI" data-price="0" data-image="image/agatա1.jpg">ADD TO CART</button>
+        </a> <button class="add-to-card" data-title="HAND WITH TOXIC PEN" data-author="AGATHA CHRISTI" data-price="0" data-image="image/agata1.jpg">ADD TO CART</button>
     </div>
         <div class="book1">
-     <a href="">
+       <a href="book-details.php">
             <img src="image/azkaban.png"class="img">
              <h3 class="product-title">HARRY POTTER AND PRISONER OF AZKABAN</h3>
                 <p class="product-author">JK ROWLING</p>
@@ -593,7 +635,7 @@
 
     </div>
        <div class="book1">
-     <a href="">
+         <a href="book-details.php">
             <img src="image/blood-prince.png"class="img">
              <h3 class="product-title">HARRY POTTER AND HALF-BLOOD PRINCE</h3>
                 <p class="product-author">JK ROWLING</p>

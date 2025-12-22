@@ -350,12 +350,12 @@ $allBooks = $bookController->getAllBooks();
                         <div class="input-wrapper">
                             <select id="genre" name="genre" required>
                                 <option value="" disabled <?php echo !isset($_POST['genre']) ? 'selected' : ''; ?>>Select genre</option>
-                                <option value="Fiction" <?php echo (isset($_POST['genre']) && $_POST['genre'] == 'Fiction') ? 'selected' : ''; ?>>Fiction</option>
-                                <option value="Non-Fiction" <?php echo (isset($_POST['genre']) && $_POST['genre'] == 'Non-Fiction') ? 'selected' : ''; ?>>Non-Fiction</option>
-                                <option value="Science Fiction" <?php echo (isset($_POST['genre']) && $_POST['genre'] == 'Science Fiction') ? 'selected' : ''; ?>>Science Fiction</option>
+                                <option value="Audiobook" <?php echo (isset($_POST['genre']) && $_POST['genre'] == 'Fiction') ? 'selected' : ''; ?>>Fiction</option>
+                                <option value="Romance" <?php echo (isset($_POST['genre']) && $_POST['genre'] == 'Non-Fiction') ? 'selected' : ''; ?>>Non-Fiction</option>
+                                <option value="Comedy" <?php echo (isset($_POST['genre']) && $_POST['genre'] == 'Science Fiction') ? 'selected' : ''; ?>>Science Fiction</option>
                                 <option value="Fantasy" <?php echo (isset($_POST['genre']) && $_POST['genre'] == 'Fantasy') ? 'selected' : ''; ?>>Fantasy</option>
-                                <option value="Mystery" <?php echo (isset($_POST['genre']) && $_POST['genre'] == 'Mystery') ? 'selected' : ''; ?>>Mystery</option>
-                                <option value="Biography" <?php echo (isset($_POST['genre']) && $_POST['genre'] == 'Biography') ? 'selected' : ''; ?>>Biography</option>
+                                <option value="Detective" <?php echo (isset($_POST['genre']) && $_POST['genre'] == 'Mystery') ? 'selected' : ''; ?>>Mystery</option>
+                                <option value="History" <?php echo (isset($_POST['genre']) && $_POST['genre'] == 'Biography') ? 'selected' : ''; ?>>Biography</option>
                             </select>
                             <i class="fas fa-tag input-icon"></i>
                         </div>
