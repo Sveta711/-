@@ -17,14 +17,14 @@ body {
     font-family: 'Inter', sans-serif;
     background-color: var(--branch-grey);
     margin: 0;
-    padding: 40px 0; /* Ավելացնում ենք տարածք վերևից/ներքևից */
+    padding: 40px 0; 
     display: flex;
     justify-content: center;
 }
 
 .registration-container {
     width: 100%;
-    max-width: 550px; /* Մի փոքր ավելի լայն քան լոգինը */
+    max-width: 550px; 
 }
 
 .registration-box {
@@ -52,7 +52,6 @@ body {
     font-size: 14px;
 }
 
-/* Երկու սյունակով դասավորության համար */
 .form-row {
     display: flex;
     gap: 15px;
