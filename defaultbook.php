@@ -1,22 +1,18 @@
 <?php
-// book-details.php
 require_once 'config.php';
 require_once 'BookRepository.php';
 
 $connection = Database::getInstance();
 $bookRepository = new BookRepository($connection);
 
-// Ստանում ենք պարամետրերը
 $bookType = $_GET['type'] ?? 'dynamic'; // 'dynamic' կամ 'static'
 $bookId = $_GET['id'] ?? null;
 
 $book = null;
 
 if ($bookType === 'dynamic' && $bookId) {
-    // Բեռնել դինամիկ գիրքը բազայից
     $book = $bookRepository->getById($bookId);
 } elseif ($bookType === 'static') {
-    // Ստատիկ գրքերի զանգվածը
     $staticBooks = [
         'pride' => [
             'title' => 'PRIDE AND PREJUDICE',
@@ -58,7 +54,6 @@ if ($bookType === 'dynamic' && $bookId) {
     $book = $staticBooks[$bookId] ?? null;
 }
 
-// Եթե գիրքը չգտնվեց
 if (!$book) {
     header("Location: welcome.php");
     exit;
